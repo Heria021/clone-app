@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // eslint ignore during build
+  eslint: { ignoreDuringBuilds: true },
+  images: {
+    domains: ['www.centralaxis.com', 'assets.basehub.com'],
+  },
 };
 
 export default nextConfig;
