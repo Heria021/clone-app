@@ -32,7 +32,7 @@ export default function LogoCarouselSection() {
 
   return (
     <div className="relative flex flex-col items-center gap-10 py-14 md:py-[72px] bg-black">
-      <h2 className=" text-muted-foreground">
+      <h2 className=" text-muted-foreground tracking-tight">
         Seamless integrations with any data center hardware
       </h2>
       <div className="relative w-full flex flex-col items-center justify-center overflow-hidden">
@@ -41,6 +41,8 @@ export default function LogoCarouselSection() {
             <LogoCard key={logo.name} {...logo} />
           ))}
         </Marquee>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-black block md:hidden"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-black block md:hidden"></div>
       </div>
     </div>
   );

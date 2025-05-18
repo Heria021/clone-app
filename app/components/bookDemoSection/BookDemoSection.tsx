@@ -6,7 +6,7 @@ import React from "react";
 
 export default function BookDemoSection() {
   return (
-    <div className="container mx-auto py-10">
+    <div className="container relative mx-auto flex flex-col items-center gap-10 px-6  ">
       <Card className="relative h-[250px] w-full overflow-hidden rounded-xl border border-muted-foreground/30 shadow-none bg-transparent">
         {/* Background image with blur */}
         <img

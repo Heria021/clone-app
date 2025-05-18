@@ -12,7 +12,7 @@ export default function HeroSection() {
       </div>
 
       {/* Blur Glow - Visible on all screen sizes */}
-      <div className="pointer-events-none absolute left-1/2 top-5/5 z-0 aspect-square w-[100vw] sm:w-[35vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#8b5cf6] opacity-50 sm:opacity-24 blur-[130px] md:blur-[120px]" />
+      <div className="pointer-events-none absolute left-1/2 top-5/5 z-0 aspect-square w-[140vw] sm:w-[38vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#8b5cf6] opacity-40 sm:opacity-24 blur-[150px] md:blur-[120px]" />
 
       {/* Content */}
       <div className="flex flex-col divide-y divide-muted-foreground/40 pt-[35px]">
