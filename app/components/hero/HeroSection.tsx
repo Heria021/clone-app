@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
@@ -11,8 +12,14 @@ export default function HeroSection() {
         <div className="col-span-1 flex h-full items-center justify-center"></div>
       </div>
 
-      {/* Blur Glow - Visible on all screen sizes */}
-      <div className="pointer-events-none absolute left-1/2 top-5/5 z-0 aspect-square w-[140vw] sm:w-[38vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#8b5cf6] opacity-40 sm:opacity-24 blur-[150px] md:blur-[120px]" />
+      {/* Blur Glow - Fixed for consistent mobile display */}
+      <div 
+        className="pointer-events-none absolute left-1/2 top-2/2 z-0 aspect-square w-[140vw] 
+                  -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#8b5cf6] 
+                  opacity-40 blur-[150px] 
+                  sm:w-[80vw] sm:opacity-30 sm:blur-[150px] 
+                  md:w-[30vw] md:opacity-35 md:blur-[120px]" 
+      />
 
       {/* Content */}
       <div className="flex flex-col divide-y divide-muted-foreground/40 pt-[35px]">
@@ -31,7 +38,7 @@ export default function HeroSection() {
         </div>
 
         {/* CTA Button */}
-        <div className="flex items-start justify-center px-8 sm:px-24">
+        <div className="flex items-start z-10 justify-center px-8 sm:px-24">
           <div className="flex w-full max-w-[80vw] flex-col items-center justify-start md:!max-w-[392px]">
             <Button
               variant="default"

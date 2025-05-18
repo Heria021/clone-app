@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -25,8 +27,7 @@ export default function FutureDataCentersSection() {
           </Button>
 
           <Button
-            variant="outline"
-            className="bg-[#1a1a1a] hover:bg-[#262626] border-[#333] text-white h-8 rounded-full px-3.5 text-sm font-normal md:px-5"
+            className="border bg-primary hover:bg-gray-800 border-muted-foreground/30 text-secondary h-8 rounded-full px-3.5 text-sm font-normal md:px-5"
           >
             Learn More
           </Button>

@@ -4,7 +4,16 @@ const nextConfig: NextConfig = {
   // eslint ignore during build
   eslint: { ignoreDuringBuilds: true },
   images: {
-    domains: ['www.centralaxis.com', 'assets.basehub.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.centralaxis.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.basehub.com',
+      },
+    ],
   },
 };
 
