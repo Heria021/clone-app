@@ -33,12 +33,12 @@ export default function MobileMenuItem({
         />
       </Button>
       {isExpanded && (
-        <div className="px-6 pb-4">
+        <div className="pb-4">
           {menu.items.map((item, itemIndex) => (
             <Link
               key={itemIndex}
               href={item.href}
-              className="flex justify-between items-center w-full py-4 px-6 text-secondary font-medium text-base h-auto whitespace-normal"
+              className="flex justify-between items-center w-full py-2 px-6 text-muted/40 font-medium text-base h-auto whitespace-normal"
               onClick={onItemClick}
             >
               {item.label}
