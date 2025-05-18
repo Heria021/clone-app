@@ -77,7 +77,7 @@ export default function Header() {
         <div className="flex items-center w-[36px] h-[36px]">
           <Link href="/" className="flex items-center space-x-3">
             <Image
-              src="/logo.webp"
+              src="https://www.centralaxis.com/_next/image?url=%2Flogo_white_icon_only.png&w=96&q=75"
               alt="CentralAxis Logo"
               width={36}
               height={36}
